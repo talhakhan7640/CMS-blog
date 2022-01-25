@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { PostCard, Categories, PostWidget } from '../components';
 import { getPosts } from '../services';
 import { FeaturedPosts } from '../sections';
+import { AppProps } from 'next/app';
 
 export default function Home({ posts }) {
   return (
@@ -14,12 +15,12 @@ export default function Home({ posts }) {
 
       <div className='grid grid-cols-l lg:grid-cols-12 gap-12'>
         <div className='lg:col-span-8 col-span-1 grid grid-cols-1 lg:grid-cols-12 gap-5'>
-            {posts.map((post, index) => <PostCard post={post.node} key={post.title}/>)}   
+            {posts.map((post) => <PostCard post={post.node} key={post.title}/>)}   
         </div>
         <div className='lg:col-span-4 col-span-1'>
             <div className="lg:sticky relative top-8">
-              <PostWidget />
               <Categories />
+              <PostWidget />
             </div>
         </div>
 
@@ -29,7 +30,7 @@ export default function Home({ posts }) {
 }
 
 export async function getStaticProps() {
-  const posts = (await getPosts()) || [];
+  const posts= (await getPosts()) || [];
 
   return {
     props: { posts }
