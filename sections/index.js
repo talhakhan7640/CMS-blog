@@ -1,1 +1,1 @@
-export { default as FeaturedPosts } from './Featuredposts';
+export { default as FeaturedPosts } from './FeaturedPosts';
