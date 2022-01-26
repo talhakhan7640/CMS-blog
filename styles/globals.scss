@@ -7,10 +7,13 @@
 .post-card, .post-widget, .category {
   // background-color: #283043;
   // background-color: #2B2F30;
-  // background-color: #FFFEFE;
-  background-color: inherit;
+  background-color: #eceaea;
+  // background-color: rgb(231, 230, 230);
   color: black;
   // border: 1px solid black;
+}
+.header {
+  background: rgb(231, 230, 230);
 }
 html,
 body {
@@ -24,7 +27,8 @@ body {
     height: 100vh;
     // background: linear-gradient(to right bottom, #6d327c, #485DA6, #00a1ba, #01b18e, #32b37b);
     // background: #D3D3D3;
-    background-color: #FAFAFA;
+    // background-color: #FAFAFA;
+      background-color: rgb(231, 230, 230);
     // background-color: #1C1F27;
     // background-image: url("../public/bg.jpg");
     position: fixed;
