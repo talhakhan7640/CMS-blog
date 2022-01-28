@@ -45,7 +45,7 @@ const PostDetail = ({ post }) => {
 
 
     return (
-        <div className="post-card bg-white shadow-lg rounded-lg lg:p-8 pb-12 mb-8 text-black">
+        <div className=" pb-12 mb-8 text-black">
             <div className="relative overflow-hidden shadow-md mb-6">
                 <img 
                     className=""
@@ -70,8 +70,8 @@ const PostDetail = ({ post }) => {
                         </span>
                     </div>
                 </div>
-                <h1 className="mb-8 text-2xl font-semibold">{post.title}</h1>
-                <p className="text-sm">{post.content.raw.children.map((typeObj, index) => {
+                <h1 className="mb-8">{post.title}</h1>
+                <p className="">{post.content.raw.children.map((typeObj, index) => {
                     const children = typeObj.children.map((item, itemIndex) => getContentFragment(itemIndex, item.text, item))
                 
                     return getContentFragment(index, children, typeObj, typeObj.type)
