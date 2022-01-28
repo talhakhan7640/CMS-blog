@@ -15,14 +15,14 @@ const Comments = ({ slug }) => {
     return (
         <>
             {comment.length > 0 && (
-                <div className="bg-white shadow-lg rounded-lg p-8 pb-12 mb-8 text-black">
+                <div className="comments shadow-lg rounded-lg p-8 pb-12 mb-8 text-black">
                     <h3 className="text-xl mb-8 font-semibold border-b pb-4">
                         {comments.length}
                         {' '}
                         Comments
                     </h3>
                     {comments.map((comment) => (
-                        <div key={comment.createAt} className="border-b border-gray-100 mb-4 pb-4 text-black">
+                        <div key={comment.createAt} className="border-b border-gray-300 mb-4 pb-4 text-black">
                             <p className="mb-4">
                                 <span className="font-semibold">{comment.name}</span>
                                 {' '}
@@ -32,7 +32,7 @@ const Comments = ({ slug }) => {
                             </p>
                             <p className="whitespace-pre-line text-gray-600 w-full">
                                 {parse(comment.comment)}
-                            </p> 
+                            </p>
                         </div>
                     ))}
 

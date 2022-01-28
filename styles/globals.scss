@@ -12,6 +12,9 @@
   color: black;
   // border: 1px solid black;
 }
+.comments, .comments-form {
+  background-color: #eceaea;
+}
 .header {
   background: rgb(231, 230, 230);
 }
@@ -65,7 +68,7 @@ body {
       width: 60px;
     }
   }
-  
+
 }
 
 a {

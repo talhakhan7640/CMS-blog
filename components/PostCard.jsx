@@ -13,7 +13,7 @@ const PostCard = ({ post }) => {
                     className="object-top absolute h-80 w-full object-cover shadow-lg lg:rounded-lg"
                 />
             </div> */}
-            <div className="block lg:flex text-left items-center mb-3 w-full lg:p-0">
+            <div className="block lg:flex text-left items-center mb-2 w-full lg:p-0">
                 <div className="flex items-center mb-4 lg:mb-0 w-full lg:w-auto mr-2 ">
                     <img 
                         alt={post.author.name}
