@@ -13,6 +13,11 @@
   color: black;
   // border: 1px solid black;
 }
+
+.post-widget, .category {
+  font-size: 15px;
+}
+
 .comments, .comments-form {
   background-color: #eceaea;
 }
@@ -23,6 +28,13 @@ body h1, h2, h3, h4, h5, h6 {
   font-family: 'Open Sans', sans-serif;
   font-size: 25px;
   font-weight: bolder;
+}
+
+body:not(img) {
+  opacity: .9;
+}
+.categories p{
+  font-size: 14px;
 }
 
 html,

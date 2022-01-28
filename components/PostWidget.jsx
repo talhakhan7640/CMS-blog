@@ -25,7 +25,7 @@ const PostWidget = ({ categories, slug }) => {
                 {slug ? 'Realted Posts': "Recent posts"}
             </h3>
             {relatedPosts.map((post) => (
-                <div key={post.title} className='flex item-center w-full mb-4'>
+                <div key={post.title} className='flex item-center w-full mb-3'>
                     {/* <div className='w-16 flex-none'>
                         <img 
                             alt={post.title} 

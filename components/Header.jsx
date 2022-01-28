@@ -37,7 +37,7 @@ const Header = ()=> {
                                 {category.name}
                             </span>    
                         </Link>
-                    ))}    
+                    ))}   
                 </div>
             </div>
         </div>
