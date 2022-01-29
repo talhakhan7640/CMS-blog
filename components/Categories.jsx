@@ -19,7 +19,7 @@ const Categories = () => {
                     <span className='cursor-pointer block pb-2 mb-3'>
                         {category.name}
                     </span>
-                </Link>
+                </Link>   
             ))}
         </div>
     );

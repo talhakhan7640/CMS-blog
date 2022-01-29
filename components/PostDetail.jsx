@@ -1,5 +1,13 @@
 import React from "react";
-import moment from 'moment'
+import moment from 'moment';
+// import { TwitterShareButton,
+//     FacebookShareButton,
+//     LinkedinShareButton,
+//     FacebookIcon,
+//     LinkedinIcon,
+//     TwitterIcon,
+//     FacebookShareCount,
+//     } from "react-share";
 
 const PostDetail = ({ post }) => {
 
@@ -45,7 +53,7 @@ const PostDetail = ({ post }) => {
 
 
     return (
-        <div className=" pb-12 mb-8 text-black">
+        <div className="pb-12 mb-8 text-black">
             <div className="relative overflow-hidden shadow-md mb-6">
                 <img 
                     className=""
@@ -54,6 +62,7 @@ const PostDetail = ({ post }) => {
                     className="object-top h-full w-full" 
                 />
             </div>
+
             <div className="px-4 lg:px-0">
                 <div className="flex items-center mb-1 lg:mb-4 w-full">
                     <div className="flex items-center mb-4 lg:mb-0 w-full lg:w-auto mr-2 text-black">
