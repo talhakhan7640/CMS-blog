@@ -8,7 +8,7 @@ export default function Home({ posts }) {
   return (
     <div className="container-fluid mx-auto px-5 mb-8">
       <Head>
-        <title>Codes!ck</title>
+        <title>dead.dev</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <FeaturedPosts />
