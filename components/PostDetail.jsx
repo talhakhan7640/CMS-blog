@@ -63,7 +63,7 @@ const PostDetail = ({ post }) => {
                 />
             </div>
 
-            <div className="px-4 lg:px-0">
+            <div className="px-4 lg:px-3">
                 <div className="flex items-center mb-1 lg:mb-4 w-full">
                     <div className="flex items-center mb-4 lg:mb-0 w-full lg:w-auto mr-2 text-black">
                         <img 
