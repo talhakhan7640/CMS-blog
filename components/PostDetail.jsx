@@ -1,3 +1,4 @@
+
 import React from "react";
 import moment from 'moment';
 // import { TwitterShareButton,
@@ -54,14 +55,7 @@ const PostDetail = ({ post }) => {
 
     return (
         <div className="pb-12 mb-8 text-black">
-            <div className="relative overflow-hidden shadow-md mb-6">
-                <img 
-                    className=""
-                    src={post.featuredImage.url} 
-                    alt={post.title}
-                    className="object-top h-full w-full" 
-                />
-            </div>
+            
 
             <div className="px-4 lg:px-3">
                 <div className="flex items-center mb-1 lg:mb-4 w-full">
@@ -80,6 +74,16 @@ const PostDetail = ({ post }) => {
                     </div>
                 </div>
                 <h1 className="mb-8">{post.title}</h1>
+
+                <div className="relative overflow-hidden shadow-md mb-6">
+                    <img 
+                        className=""
+                        src={post.featuredImage.url} 
+                        alt={post.title}
+                        className="object-top h-full w-full" 
+                    />
+                </div>
+
                 <p className="">{post.content.raw.children.map((typeObj, index) => {
                     const children = typeObj.children.map((item, itemIndex) => getContentFragment(itemIndex, item.text, item))
                 
